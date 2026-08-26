@@ -23,6 +23,5 @@ class Solution {
         // - If total XOR == 0 -> we must drop exactly one non-zero element
         //   to flip the XOR to non-zero, so the best length is n - 1
     return resultXor == 0 ? n - 1 : n;
-  
     }
 };
