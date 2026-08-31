@@ -15,8 +15,9 @@ class Solution {
         //checking if we remove both from right
         int fromBack = n - left;
         //condition if we remove both separately
-        int fromSides = (left + 1) + (n - right);
-        return Math.min(fromFront, Math.min(fromBack, fromSides));
+        int bothSides = (left + 1) + (n - right);
+        return Math.min(fromFront, Math.min(fromBack, bothSides));
  
         }
     }
+    //Brute Force Method
