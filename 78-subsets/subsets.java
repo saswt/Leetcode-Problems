@@ -1,10 +1,10 @@
 public class Solution {
-    private List<List<Integer>> result = new ArrayList<>();
+    private List<List<Integer>> result = new ArrayList<>();//stores all subsets
 
-    public List<List<Integer>> subsets(int[] nums) {
-        List<Integer> temp = new ArrayList<>();
-        solve(nums, 0, temp);
-        return result;        
+    public List<List<Integer>> subsets(int[] nums) {//entry point
+        List<Integer> temp = new ArrayList<>();//empty list temp to build one subset
+        solve(nums, 0, temp);//starts recursion from index 0 
+        return result;//returns all subsets stored in result     
     }
 
     private void solve(int[] nums, int idx, List<Integer> temp) {
@@ -18,3 +18,7 @@ public class Solution {
         solve(nums, idx + 1, temp);
     }
 }
+
+
+//TC: O(n * 2^n)
+//SC: O(n)
