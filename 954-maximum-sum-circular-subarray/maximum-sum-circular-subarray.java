@@ -1,3 +1,11 @@
+//asked in Amazon, Microsoft
+//Sum == -3
+//minSum == -3
+//maxSum == -1
+//circularSum == totalSum - minSum
+//if(maxSum > 0) return max(maxSum, circSum)
+//else return maxSum
+
 class Solution {
     public int maxSubarraySumCircular(int[] nums) {
         int n = nums.length;
