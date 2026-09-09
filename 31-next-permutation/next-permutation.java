@@ -1,10 +1,12 @@
 class Solution {
     public void nextPermutation(int[] nums) {
-        int n = nums.length;
+        int n = nums.length;//size of array
         int i = n - 1;
-        while (i >0 && nums[i] <= nums[i - 1] ) {
+        while (i >0 && nums[i] <= nums[i - 1] ) {//first decreasing element from right
             i--;
         }
+
+        //If such an element exists, find next greater element and swap
         if(i != 0) {
             int index = i;
             for (int j = n - 1; j >= i; j--){
