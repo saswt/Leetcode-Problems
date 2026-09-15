@@ -1,3 +1,9 @@
+//optimized solution using map
+//map is getting used for the value of reaminder(one side count i.e. frequency) and other side value of remainder
+//Brute Force and Better Solution is not possible, since it will reach TLE(Time Limit Exceeded)m due to high constraints.
+//only optimal solution will give us answer using map only
+//This question has been asked in PAYTM, AMAZON, MICROSOFT.
+
 import java.util.HashMap;
 class Solution {
     public int subarraysDivByK(int[] nums, int k) {
