@@ -22,7 +22,6 @@ class Solution {
              // Check whether this remainder has appeared before
             if (map.containsKey(rem)) { // containsKey(key) -> Returns true if key exists
 
-
              // Add the frequency of this remainder to answer
                 result += map.get(rem); // get(key) -> Returns value stored at key
             }
@@ -30,10 +29,7 @@ class Solution {
              // getOrDefault(key, defaultValue)
             // If key exists -> return its value
             // Else -> return defaultValue (0 here)
-
-
         }
-        
-    return result;
+         return result;
     }
 }
