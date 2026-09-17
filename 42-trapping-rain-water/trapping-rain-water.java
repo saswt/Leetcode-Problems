@@ -1,3 +1,8 @@
+//solved it with the help pf 2 arryas
+//getleftMax and getrightMax are the 2 arrays
+//trapping water can be found as min(4,6) = 4 - 2(height of that specific roof)
+//this can be solved eaily using this, without stack, DP
+
 public class Solution {
     public int [] getLeftMax(int [] height, int n) {
         int[] leftMax = new int[n];
