@@ -1,3 +1,6 @@
+//Solved using Backtracking
+//Space Complexity: O(L)
+//Time Complexity: O(M * N * 3^L)
 class Solution {
     int l, m, n;
     int directions[] [] = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
