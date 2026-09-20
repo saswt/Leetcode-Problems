@@ -1,3 +1,7 @@
+//TC : O(n)
+//SC : O(n)
+//Sliding Window approach
+
 class Solution {
     public int minSumOfLengths(int[] arr, int target) {
 
