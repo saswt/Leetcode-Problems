@@ -1,7 +1,8 @@
 //TC : O(n)
 //SC : O(n)
 //Sliding Window approach
-
+//Sliding window me sabse pehle int i = 0; int j = 0; declare kr denge
+//sliding window ka pehla rule yhi hai
 class Solution {
     public int minSumOfLengths(int[] arr, int target) {
 
