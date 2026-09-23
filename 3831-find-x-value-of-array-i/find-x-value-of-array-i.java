@@ -1,3 +1,9 @@
+//Asked in Rubrik
+//One of the best question
+//Brute Force approach and improved Brute Force approach can't be executed due to TLE
+//only Optimal solution can be done
+//TC of Optimal Solution: O(n * k)
+
 class Solution {
     public long[] resultArray(int[] nums, int k) {
         int n = nums.length;
