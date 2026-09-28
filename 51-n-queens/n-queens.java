@@ -1,3 +1,5 @@
+//STRIVER's Solution(using backtracking)
+
 /* ==================== N-Queens Algorithm ====================
 1. Place ONE queen in EACH column.
 2. Try every row of the current column.
