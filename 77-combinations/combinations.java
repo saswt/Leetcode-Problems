@@ -6,11 +6,15 @@ class Solution {
             result.add(new ArrayList<>(temp));
             return;
     }
-    for(int i = start; i <= n; i++) {
-        temp.add(i);
-        solve(i + 1, n, k - 1, temp);
-        temp.remove(temp.size() - 1);
+    if (start > n) {
+        return;
     }
+    temp.add(start);
+    solve(start + 1, n, k - 1, temp);
+
+    temp.remove(temp.size() - 1);
+
+    solve(start + 1, n, k, temp);
   }
 
     public List<List<Integer>> combine(int n, int k) {
