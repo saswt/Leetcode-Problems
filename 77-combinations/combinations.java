@@ -1,3 +1,6 @@
+//Approach 1: without using for loop
+//Approach 2: using for loop(more optimised solution).
+
 import java.util.*;
 class Solution {
     List<List<Integer>> result = new ArrayList<>();
