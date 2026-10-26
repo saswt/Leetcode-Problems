@@ -1,30 +1,32 @@
-//Time Complexity: O(n * 3 * 2^(n - 1)), then approx. = O(2^n * n)
-//Space Complexity: O(n * 2^n)
-
 class Solution {
-    public void solve(int n, StringBuilder curr, List<String> result) {
+    public void solve(int n, StringBuilder curr, int[] count, int k, String[] result) {
         if (curr.length() == n) {
-            result.add(curr.toString());
+            count[0]++;
+            if (count[0] == k) {
+                result[0] = curr.toString();
+            }
             return;
         }
         for (char ch = 'a'; ch <= 'c'; ch++) {
             if(curr.length() > 0 && curr.charAt(curr.length() - 1) == ch)
             continue;
 
+            //Do
             curr.append(ch);
-            solve(n, curr, result);
+            //Explore
+            solve(n, curr, count, k, result);
+            //Undo
             curr.deleteCharAt(curr.length() - 1);
         }
     }
     public String getHappyString(int n, int k) {
         StringBuilder curr = new StringBuilder();
-        List<String> result = new ArrayList<>();
-        solve(n, curr, result);
+        String[] result = {""};
+        int[] count = {0};
 
-        if(result.size() < k)
-            return "";
+        solve(n, curr, count, k, result);
 
-            return result.get(k - 1);
+            return result[0];
         }
         
     }
