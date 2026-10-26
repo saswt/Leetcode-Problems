@@ -1,3 +1,6 @@
+//Time Complexity: O(n * 3 * 2^(n - 1)), then approx. = O(2^n * n)
+//Space Complexity: O(n * 2^n)
+
 class Solution {
     public void solve(int n, StringBuilder curr, List<String> result) {
         if (curr.length() == n) {
